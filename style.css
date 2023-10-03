@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap");
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 45px;
+}
+
+.calculator {
+    background-color: burlywood;
+    padding: 10px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.display {
+    background-color: slategray;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 35px;
+    margin: 10px;
+    color: white;
+}
+
+.pad {
+    display: flex;
+}
+
+.numpad {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+}
+
+.numbers {
+    padding: 30px;
+    margin: 3px;
+    font-size: 40px;
+    background-color: grey;
+}
+
+.signpad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 10px;
+}
+.signs {
+    background-color: grey;
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+}
+
+button {
+    border-radius: 10px;
+    border: 0;
+}
+
+button:active {
+    background-color: darkslategrey;
+    color: whitesmoke;
+}
