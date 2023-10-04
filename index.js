@@ -7,6 +7,17 @@ let secondNum = ""
 let operator
 let operatorCount = 0
 let result
+let clearButton = document
+    .querySelector(".clear-btn")
+    .addEventListener("click", function () {
+        firstNumStatus = true
+        firstNum = ""
+        secondNumStatus = false
+        secondNum = ""
+        operatorCount = 0
+        topDisplay.textContent = ""
+        bottomDisplay.textContent = ""
+    })
 
 let numberButton = document.querySelectorAll(".num-btn").forEach((num) => {
     num.addEventListener("click", function () {
