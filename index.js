@@ -1,4 +1,4 @@
-let display = document.querySelector(".display")
+let bottomDisplay = document.querySelector(".bottom-display")
 let firstNumStatus = true
 let firstNum = ""
 let secondNumStatus = false
@@ -9,11 +9,11 @@ let numberButton = document.querySelectorAll(".num-btn").forEach((num) => {
     num.addEventListener("click", function () {
         if (firstNumStatus) {
             firstNum += num.textContent
-            display.innerText = firstNum
+            bottomDisplay.innerText = firstNum
             console.log(firstNum)
         } else if (secondNumStatus) {
             secondNum += num.textContent
-            display.innerText = firstNum
+            bottomDisplay.innerText = secondNum
             console.log(secondNum)
         }
     })
@@ -31,6 +31,8 @@ let signButton = document.querySelectorAll(".sign-btn").forEach((sign) => {
 let equals = document.querySelector(".equal-sign")
 
 equals.addEventListener("click", function () {
+    firstNumStatus = false
+    secondNumStatus = false
     console.log(`The final expression is: ${firstNum} ${operator} ${secondNum}`)
     console.log(typeof operator)
 })

@@ -74,3 +74,11 @@ button:active {
     background-color: darkslategrey;
     color: whitesmoke;
 }
+
+.bottom-display {
+    font-size: 50px;
+}
+
+.top-display {
+    font-size: 30px;
+}
