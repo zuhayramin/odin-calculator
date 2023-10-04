@@ -27,7 +27,8 @@ body {
 .display {
     background-color: slategray;
     border-radius: 10px;
-    padding: 30px;
+    height: 120px;
+    padding: 10px 30px;
     font-size: 35px;
     margin: 10px;
     color: white;
