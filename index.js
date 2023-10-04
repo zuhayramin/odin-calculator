@@ -50,6 +50,11 @@ let signButton = document.querySelectorAll(".sign-btn").forEach((sign) => {
 let equals = document.querySelector(".equal-sign")
 
 function getCalculation() {
+    if (firstNum === "") {
+        topDisplay.textContent = ""
+        bottomDisplay.textContent = "Error"
+        return
+    }
     firstNumStatus = false
     secondNumStatus = false
     topDisplay.innerText = firstNum + " " + operator + " " + secondNum
@@ -68,5 +73,6 @@ function calculation() {
     if (operator === "+") return num1 + num2
     if (operator === "-") return num1 - num2
     if (operator === "*") return num1 * num2
+    if (operator === "/" && num2 === 0) return "Infinity"
     if (operator === "/") return (num1 / num2).toFixed(2)
 }
